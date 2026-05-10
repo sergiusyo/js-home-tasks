@@ -45,10 +45,17 @@
 
 // Задачи: счётчик и break.
 // Последовательность чисел.
-for (let i = 1; i <= 20; i++) {
-  if (i % 3 === 0 && i % 9 !== 0) {
-    console.log(i);
-  }
-}
+// for (let i = 1; i <= 20; i++) {
+//   if (i % 3 === 0 && i % 9 !== 0) {
+//     console.log(i);
+//   }
+// }
 
 // Повторяй за мной
+// let n = parseInt(prompt("Номер:"));
+// let text = prompt("Текст");
+
+// for (let i = 1; i <= n; i++) {
+// let i = 1; i <= 3; i++ выведет стразу 3 строки
+//   console.log(`${i}: ${text}`);
+// }
