@@ -17,4 +17,4 @@ var arraySign = function (nums) {
   }
 };
 
-console.log(arraySign([-1, 1, -1, 1, -1]));
+console.log(arraySign([-1, 1, 3, 1, -1]));
