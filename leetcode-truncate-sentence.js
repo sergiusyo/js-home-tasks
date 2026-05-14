@@ -4,5 +4,8 @@ var truncateSentence = function (s, k) {
 };
 
 console.log(
-  truncateSentence("chopper is not a tanuki is the solution to this problem", 3),
+  truncateSentence(
+    "chopper is not a tanuki is the solution to this problem",
+    3,
+  ),
 );
