@@ -25,13 +25,25 @@
 
 // Задачи: паттерны.
 // Средний балл.
-let n = Number(prompt("Количество оценок:")); // 3
-let total = 0;
-for (let i = 0; i < n; i++) {
-  let num = Number(prompt(`Число ${i + 1}`)); // 4,5,3
-  total += num;
-}
+// let n = Number(prompt("Количество оценок:")); // 3
+// let total = 0;
+// for (let i = 0; i < n; i++) {
+//   let num = Number(prompt(`Число ${i + 1}`)); // 4,5,3
+//   total += num;
+// }
 
-console.log("Средний балл:", total / n); // 4
+// console.log("Средний балл:", total / n); // 4
 
 // Максимальное.
+// let n = Number(prompt("Количество чисел:"));
+// let first = Number(prompt("Число 1:"));
+// let max = first; // 3
+
+// for (let i = 1; i < n; i++) {
+//   let num = Number(prompt(`Число ${i + 1}`));
+//   console.log(`Введено число ${num}, текущий максимум ${max}`)
+//   if (num > max) max = num
+//   console.log(`Новый максимум ${max}`)
+// }
+
+// console.log('Максимум:', max);
