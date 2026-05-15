@@ -50,3 +50,11 @@
 
 // Задачи: алгоритмы.
 // Делители.
+// let n = Number(prompt("Число:"));
+// let result = "";
+
+// for (let i = 1; i <= n; i++) {
+//   if (n % i === 0) result += i + " ";
+// }
+
+// console.log(result.trim());
