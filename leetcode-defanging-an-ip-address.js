@@ -1,4 +1,5 @@
 // Если указан действительный (IPv4) IP-адрес, верните исправленную версию этого IP-адреса.
+
 // var defangIPaddr = function (address) {
 //   return address.replaceAll(".", "[.]");
 // };
