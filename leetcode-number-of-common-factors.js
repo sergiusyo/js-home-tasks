@@ -1,12 +1,16 @@
 // Цикл от 1 до min(a, b), проверяешь делимость сразу на оба числа. Прямая задача на паттерн делителей из урока.
-var commonFactors = function (a = 12, b = 6) {
-  let min = 0;
-  for (let i = 1; i < min; i++) {
-    if (a % 3 === 0 && b % 3 === 0) {
-      console.log(i);
+
+var commonFactors = function (a, b) {
+  let count = 0; // Счетчик для хранения количества общих делителей.
+  let limit = Math.min(a, b); // Определяется верхняя граница перебора.
+  for (let i = 1; i <= limit; i++) {
+    // Перебираются все числа.
+    if (a % i === 0 && b % i === 0) {
+      // если (a % i и b % i === 0), значит число i - общий делитель.
+      count++; // Счетчик увеличивается.
     }
-    return min;
   }
+  return count;
 };
 
-console.log(commonFactors());
+console.log(commonFactors(12, 6));
