@@ -12,4 +12,4 @@ var commonFactors = function (a, b) {
   return count;
 };
 
-console.log(commonFactors(12, 6));
+console.log(commonFactors(37, 6));
