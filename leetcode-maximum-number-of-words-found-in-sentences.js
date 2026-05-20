@@ -17,6 +17,6 @@ var mostWordsFound = function (sentences) {
   return maxWords;
 };
 
-// console.log(mostWordsFound(["alice and bob love leetcode"]));
-// console.log(mostWordsFound(["i think so too"]));
-// console.log(mostWordsFound(["this is great thanks very much"]));
+console.log(mostWordsFound(["alice and bob love leetcode"]));
+console.log(mostWordsFound(["i think so too"]));
+console.log(mostWordsFound(["this is great thanks very much"]));
