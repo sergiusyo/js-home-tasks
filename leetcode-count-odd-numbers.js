@@ -2,15 +2,15 @@
 // Хорошая проверка на то, что не всегда брутфорс работает.
 
 var countOdds = function (low, high) {
-    // Количество чисел в диапазоне
-    const total = high - low + 1;
-    // Половина из них (округление вниз) — нечётные
-    let result = Math.floor(total / 2);
-    // Если хотя бы одно из граничных чисел нечётное, добавляем 1
-    if (low % 2 === 1 || high % 2 === 1) {
-        result += 1;
-    }
-    return result;
+  // Количество чисел в диапазоне
+  const total = high - low + 1;
+  // Половина из них (округление вниз) — нечётные
+  let result = Math.floor(total / 2);
+  // Если хотя бы одно из граничных чисел нечётное, добавляем 1
+  if (low % 2 === 1 || high % 2 === 1) {
+    result += 1;
+  }
+  return result;
 };
 
-console.log(countOdds(3, 7)); 
+// console.log(countOdds(3, 7));
