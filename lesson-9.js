@@ -23,15 +23,18 @@
 // console.log("Сумма:", total);
 
 // ========================= //
+
 // Задачи: while + условие. Пока делимся.
 // Запросите два числа N и D. Последовательно делите N на D
 // (целочисленно) пока N больше 0. Выводите N на каждом шаге.
 
-let n = Number(prompt("Число N:"));
-let d = Number(prompt("Число D:"));
+// let n = Number(prompt("Число N:"));
+// let d = Number(prompt("Число D:"));
 
-while (n > 0) {
-  // 100 > 0 - true.
-  console.log(n);
-  n = Math.floor(n / d);
-}
+// while (n > 0) {
+//   // 100 > 0 - true.
+//   console.log(n);
+//   n = Math.floor(n / d);
+// }
+
+// ========================= //
