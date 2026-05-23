@@ -10,6 +10,6 @@ var sumOfMultiples = function (n) {
   return sum;
 };
 
-console.log(sumOfMultiples(7)); // 21
-console.log(sumOfMultiples(10));
-console.log(sumOfMultiples(9));
+// console.log(sumOfMultiples(7)); // 21
+// console.log(sumOfMultiples(10));
+// console.log(sumOfMultiples(9));
