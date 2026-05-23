@@ -1,7 +1,7 @@
 // Цикл от 1 до min(a, b), проверяешь делимость сразу на оба числа. Прямая задача на паттерн делителей из урока.
 var commonFactors = function (a, b) {
   let count = 0; // Количество общих делителей.
-  let limit = Math.min(a, b); // минимальное из двух чисел a и b, т.к. делитель не м/б >самого числа. 
+  let limit = Math.min(a, b); // минимальное из двух чисел a и b, т.к. делитель не м/б >самого числа.
   for (let i = 1; i <= limit; i++) {
     // Перебираются все числа.
     if (a % i === 0 && b % i === 0) {
@@ -12,4 +12,4 @@ var commonFactors = function (a, b) {
   return count;
 };
 
-console.log(commonFactors(37, 6));
+// console.log(commonFactors(37, 6));
