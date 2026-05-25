@@ -59,15 +59,15 @@
 // Одинаковые цифры.
 // Запросите натуральное число. Определите — все ли его цифры одинаковы? Выведите YES или NO.
 
-let n = Number(prompt("Число:"));
-const first = n % 10; // первая (или последняя) цифра.
-let allSame = true; // подразумевается, все цифры одинаковые.
-while (n !== 0) {
-  if (n % 10 !== first) {
-    allSame = false; // если цифра НЕ равна first, устанавливаем allSame = false и выходим
-    // из цикла через break. Если равна - проверяем дальше.
-    break;
-  }
-  n = Math.floor(n / 10);
-}
-console.log(allSame ? "YES" : "NO"); // если все цифры одинаковые (allSame === true) - YES, иначе NO.
+// let n = Number(prompt("Число:"));
+// const first = n % 10; // первая (или последняя) цифра.
+// let allSame = true; // подразумевается, все цифры одинаковые.
+// while (n !== 0) {
+//   if (n % 10 !== first) {
+//     allSame = false; // если цифра НЕ равна first, устанавливаем allSame = false и выходим
+//     // из цикла через break. Если равна - проверяем дальше.
+//     break;
+//   }
+//   n = Math.floor(n / 10);
+// }
+// console.log(allSame ? "YES" : "NO"); // если все цифры одинаковые (allSame === true) - YES, иначе NO.
