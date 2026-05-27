@@ -18,9 +18,9 @@ var numberOfSteps = function (num) {
   return steps;
 };
 
-console.log(numberOfSteps(14)); // 6
-console.log(numberOfSteps(8)); // 4
-console.log(numberOfSteps(123)); // 12
+// console.log(numberOfSteps(14)); // 6
+// console.log(numberOfSteps(8)); // 4
+// console.log(numberOfSteps(123)); // 12
 
 numberOfSteps(14); // 6
 // 14 (чет) → 7 (неч) → 6 (чет) → 3 (неч) → 2 (чет) → 1 (неч) → 0
