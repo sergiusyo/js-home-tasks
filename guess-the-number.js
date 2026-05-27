@@ -56,16 +56,16 @@
 // Когда пользователь угадал число (guess === secret), цикл заканчивается.
 // Выводится поздравление и количество попыток.
 
-const secret = Math.floor(Math.random() * 100) + 1;
-let guess = Number(prompt("Угадай число (1-100):"));
-let attempts = 1;
+// const secret = Math.floor(Math.random() * 100) + 1;
+// let guess = Number(prompt("Угадай число (1-100):"));
+// let attempts = 1;
 
-while (guess !== secret) {
-  if (guess < secret) console.log("Больше!");
-  else console.log("Меньше!");
+// while (guess !== secret) {
+//   if (guess < secret) console.log("Больше!");
+//   else console.log("Меньше!");
 
-  guess = Number(prompt("Ещё раз:"));
+//   guess = Number(prompt("Ещё раз:"));
 
-  attempts++; // Увеличиваем счётчик попыток на 1
-}
-console.log(`Верно! Попыток: ${attempts}`);
+//   attempts++; // Увеличиваем счётчик попыток на 1
+// }
+// console.log(`Верно! Попыток: ${attempts}`);
