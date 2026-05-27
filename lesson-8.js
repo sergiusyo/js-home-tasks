@@ -1,5 +1,6 @@
 // Задачи: операторы.
 // Произведение.
+
 // let n = Number(prompt('Число:')) // n = 5
 // let product = 1; // переменная-накопитель, т.к. при умножении на 1 результат не меняется.
 // for (let i = 2; i <= n; i++) {
@@ -25,6 +26,7 @@
 
 // Задачи: паттерны.
 // Средний балл.
+
 // let n = Number(prompt("Количество оценок:")); // 3
 // let total = 0;
 // for (let i = 0; i < n; i++) {
@@ -35,6 +37,7 @@
 // console.log("Средний балл:", total / n); // 4
 
 // Максимальное.
+
 // let n = Number(prompt("Количество чисел:"));
 // let first = Number(prompt("Число 1:"));
 // let max = first; // 3
@@ -54,7 +57,7 @@
 // let result = "";
 
 // for (let i = 1; i <= n; i++) {
-//   if (n % i === 0) result += i + " ";
+//   if (n % i === 0) result += i + " "; // найденный делитель добавляется к result.
 // }
 
 // console.log(result.trim());
