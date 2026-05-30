@@ -22,5 +22,5 @@ var countBits = function (n) {
   return result; // Результат добавляется в массив result.
 };
 
-console.log(countBits(2)); // [0, 1, 1]
-console.log(countBits(5)); // [0,1,1,2,1,2]
+// console.log(countBits(2)); // [0, 1, 1]
+// console.log(countBits(5)); // [0,1,1,2,1,2]
