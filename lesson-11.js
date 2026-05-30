@@ -18,3 +18,19 @@
 // ==================================
 
 // Шахматная доска.
+// for (let i = 0; i <= 4; i++) {
+//     let row = ""
+//     for (let j = 0; j <= 4; j++) {
+//         let product = String(i * j).padStart(4)
+//         row += "# ";
+//     }
+//     console.log(row)
+// }
+
+for (let i = 0; i < 8; i++) {
+  let row = "";
+  for (let j = 0; j < 8; j++) {
+    row += (i + j) % 2 === 0 ? "#" : " ";
+  }
+  console.log(row);
+}
