@@ -119,6 +119,5 @@ for (let i = 0; i < n; i++) {
       }
     }
   }
-  console.log(`После прохода ${i + 1}:`, arr);
 }
 // console.log(arr);
