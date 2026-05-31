@@ -63,3 +63,13 @@
 // ==================================
 
 // Матрица нулей.
+let N = Number(prompt("N:"));
+let matrix = [];
+
+for (let i = 0; i < N; i++) {
+  matrix[i] = [];
+  for (let j = 0; j < N; j++) {
+    matrix[i][j] = i === j ? 1 : 0;
+  }
+}
+for (let row of matrix) console.log(row.join(" "));
