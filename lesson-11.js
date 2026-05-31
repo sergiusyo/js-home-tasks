@@ -69,7 +69,12 @@ let matrix = [];
 for (let i = 0; i < N; i++) {
   matrix[i] = [];
   for (let j = 0; j < N; j++) {
-    matrix[i][j] = i === j ? 1 : 0;
+    matrix[i][j] = i === j ? 1 : 0; // тернарный оператор ставит:
+    //  1 на главную диагональ (где индексы строки и столбца равны).
+    //  0 во все остальные позиции.
   }
 }
-for (let row of matrix) console.log(row.join(" "));
+
+for (let row of matrix) {
+  console.log(row.join(" ")); // каждая строка выводится в консоль, элементы разделяются пробелом.
+}
