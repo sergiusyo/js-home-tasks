@@ -141,8 +141,7 @@
 // Остановитесь (break), если число кратно 7 и больше 20.
 
 for (let i = 1; i <= 30; i++) {
-  if (i === 5 || i === 10 || i === 15 || i === 20 || i === 25 || i === 30)
-    continue;
+  if (i === 5) continue;
   if (i % 7 === 0 && i > 19) break;
-  // console.log(i);
+  console.log(i);
 }
