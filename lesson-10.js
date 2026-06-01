@@ -143,5 +143,5 @@
 for (let i = 1; i <= 30; i++) {
   if (i === 5) continue;
   if (i % 7 === 0 && i > 19) break;
-  console.log(i);
+  // console.log(i);
 }
