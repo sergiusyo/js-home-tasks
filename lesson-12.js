@@ -1,6 +1,5 @@
 // Задачи: индексация строк. В столбик.
-let s = prompt('Введите текст:');
-
-console.log(s[0])
-console.log(s[1]);
-console.log(s[2]);
+const s = prompt("Введите строку: ");
+for (let i = 0; i < s.length; i++) {
+  console.log(`${i + 1}: ${s[i]}`);
+}
