@@ -60,8 +60,8 @@
 // ==================================
 
 // Матрица нулей.
-let N = Number(prompt("N:"));
-let matrix = [];
+// let N = Number(prompt("N:"));
+// let matrix = [];
 
 // for (let i = 0; i < N; i++) {
 //   matrix[i] = [];
@@ -78,6 +78,6 @@ let matrix = [];
 //   [0, 0, 1], // строка 2
 // ];
 
-for (let row of matrix) {
-  console.log(row.join(" ")); // каждая строка выводится в консоль, элементы разделяются пробелом.
-}
+// for (let row of matrix) {
+//   console.log(row.join(" ")); // каждая строка выводится в консоль, элементы разделяются пробелом.
+// }
