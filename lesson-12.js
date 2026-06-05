@@ -16,9 +16,11 @@
 // console.log(count);
 
 // Цифра 1.
-const s = prompt("Строка:");
-for (const char of s) {
-  if (char >= "0" && char <= "9") {
-    console.log(char);
-  }
-}
+// const s = prompt("Строка:");
+// for (const char of s) {
+//   if (char >= "0" && char <= "9") {
+//     console.log(char);
+//   }
+// }
+
+// Делаем срезы. 
