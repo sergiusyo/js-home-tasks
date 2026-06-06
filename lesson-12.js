@@ -32,4 +32,9 @@
 // const rev = s.split('').reverse().join("");
 // console.log(s === rev ? "YES" : "NO");
 
-// Зеркальная строка. 
+// Зеркальная строка.
+const s = prompt("Строка:");
+const n = Number(prompt("N:"));
+const start = s.slice(0, -n);
+const end = s.slice(-n).split("").reverse().join("");
+console.log(start + end);
