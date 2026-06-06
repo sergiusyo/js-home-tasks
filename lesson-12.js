@@ -27,4 +27,7 @@
 // const s = prompt("Введите строку:");
 // console.log(s.slice(0, 3), s.slice(-3), s.slice(1, -1));
 
-// Палиндром. 
+// Палиндром.
+const s = prompt("Введите строку:");
+const rev = s.split('').reverse().join("");
+console.log(s === rev ? "YES" : "NO");
