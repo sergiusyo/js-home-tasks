@@ -28,6 +28,8 @@
 // console.log(s.slice(0, 3), s.slice(-3), s.slice(1, -1));
 
 // Палиндром.
-const s = prompt("Введите строку:");
-const rev = s.split('').reverse().join("");
-console.log(s === rev ? "YES" : "NO");
+// const s = prompt("Введите строку:");
+// const rev = s.split('').reverse().join("");
+// console.log(s === rev ? "YES" : "NO");
+
+// Зеркальная строка. 
