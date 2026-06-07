@@ -13,14 +13,16 @@
 // Цензура.
 
 // Валидация полей.
-let email = prompt("Введите Email:");
+// let email = prompt("Введите Email:");
 
-if (
-  email.includes("@") && // email содержит знак @
-  email.indexOf(".") > email.indexOf("@") && // точка должна находиться строго после "@"
-  !email.includes(" ") // email НЕ содержит пробел
-) {
-  console.log("Верно");
-} else {
-  console.log("Ошибка");
-}
+// if (
+//   email.includes("@") && // email содержит знак @
+//   email.indexOf(".") > email.indexOf("@") && // точка должна находиться строго после "@"
+//   !email.includes(" ") // email НЕ содержит пробел
+// ) {
+//   console.log("Верно");
+// } else {
+//   console.log("Ошибка");
+// }
+
+// Слова задом наперёд.
