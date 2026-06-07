@@ -10,4 +10,17 @@
 // let result = s1.toLowerCase() === s2.toLowerCase() ? "Одинаковые" : "Разные";
 // console.log(result);
 
-// Цензура. 
+// Цензура.
+
+// Валидация полей.
+let email = prompt("Введите Email:");
+
+if (
+  email.includes("@") &&
+  email.indexOf(".") > email.indexOf("@") &&
+  !email.includes(" ")
+) {
+  console.log("Верно");
+} else {
+  console.log("Ошибка");
+}
