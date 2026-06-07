@@ -16,9 +16,9 @@
 let email = prompt("Введите Email:");
 
 if (
-  email.includes("@") &&
-  email.indexOf(".") > email.indexOf("@") &&
-  !email.includes(" ")
+  email.includes("@") && // email содержит знак @
+  email.indexOf(".") > email.indexOf("@") && // точка должна находиться строго после "@"
+  !email.includes(" ") // email НЕ содержит пробел
 ) {
   console.log("Верно");
 } else {
