@@ -9,3 +9,5 @@
 // const s2 = "Hello";
 // let result = s1.toLowerCase() === s2.toLowerCase() ? "Одинаковые" : "Разные";
 // console.log(result);
+
+// Цензура. 
