@@ -5,3 +5,7 @@
 // console.log(`Привет, ${cap}!`);
 
 // Регистронезависимое сравнение.
+// const s1 = "hello";
+// const s2 = "Hello";
+// let result = s1.toLowerCase() === s2.toLowerCase() ? "Одинаковые" : "Разные";
+// console.log(result);
