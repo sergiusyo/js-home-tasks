@@ -8,8 +8,8 @@
 // const s = prompt("Введите строку:");
 // const target = prompt("Символ:");
 // let count = 0;
-// for (let char of target) {
-//   if (char === "a") {
+// for (let char of s) {
+//   if (char === target) {
 //     count++;
 //   }
 // }
