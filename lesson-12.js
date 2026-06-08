@@ -37,4 +37,4 @@
 // const n = Number(prompt("N:"));
 // const start = s.slice(0, -n);
 // const end = s.slice(-n).split("").reverse().join("");
-// cleonsole.log(start + end);
+// console.log(start + end);
