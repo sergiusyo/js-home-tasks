@@ -30,4 +30,10 @@
 // console.log(s.split(" ").reverse().join(" "));
 
 // CamelCase.
-let s = prompt("Введите строку:");
+// let s = prompt("Слова через пробел:");
+// let words = s.split(" ");
+// let result = words[0].toLowerCase();
+// for (let i = 1; i < words.length; i++) {
+//   result += words[i][0].toUpperCase() + words[i].slice(1).toLowerCase();
+// }
+// console.log(result);
