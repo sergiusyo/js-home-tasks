@@ -26,3 +26,5 @@
 // }
 
 // Слова задом наперёд.
+let s = prompt("Введите строку:");
+console.log(s.split(" ").reverse().join(" "));
