@@ -1,8 +1,8 @@
 // Нормализация ввода.
 // let name = prompt("Введите имя:");
 // name = name.trim();
-// name[0].toUpperCase() + name.slice(1).toLowerCase();
-// console.log(`Привет, ${name}!`);
+// let cap = name[0].toUpperCase() + name.slice(1).toLowerCase();
+// console.log(`Привет, ${cap}!`);
 
 // Регистронезависимое сравнение.
 // const s1 = "hello";
@@ -17,7 +17,7 @@
 
 // if (
 //   email.includes("@") && // email содержит знак @
-//   email.indexOf(".") > email.indexOf("@") && // точка должна находиться строго после "@"
+//   email.lastIndexOf(".") > email.indexOf("@") && // точка должна находиться строго после "@"
 //   !email.includes(" ") // email НЕ содержит пробел
 // ) {
 //   console.log("Верно");
