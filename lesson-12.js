@@ -33,8 +33,8 @@
 // console.log(s === rev ? "YES" : "NO");
 
 // Зеркальная строка.
-// const s = prompt("Строка:"); // 'abcdefg'
-// const n = Number(prompt("N:")); // '3'
-// const start = s.slice(0, -n);
-// const end = s.slice(-n).split("").reverse().join("");
-// console.log(start + end);
+const s = prompt("Строка:"); // 'abcdefg'
+const n = Number(prompt("N:")); // '3'
+const start = s.slice(0, -n);
+const end = s.slice(-n).split("").reverse().join("");
+console.log(start + end);
