@@ -11,10 +11,10 @@
 // console.log(result);
 
 // Цензура.
-let text = prompt("Введите строку:");
-let word = prompt("Введите слово:");
-let result = text.replaceAll("***", word);
-console.log(result);
+// let text = prompt("Введите строку:");
+// let word = prompt("Введите слово:");
+// let result = text.replaceAll("***", word);
+// console.log(result);
 
 // Валидация полей.
 // let email = prompt("Введите Email:");
