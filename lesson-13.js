@@ -11,6 +11,10 @@
 // console.log(result);
 
 // Цензура.
+// let s1 = prompt("Введите строку:");
+// let s2 = prompt("Введите цензурное слово:");
+// let result = s1.replaceAll("***", "you");
+// console.log(result);
 
 // Валидация полей.
 // let email = prompt("Введите Email:");
