@@ -60,4 +60,5 @@ while (left < right) {
 // Цикл остановился, когда left и right сравнялись (оба стали равны 2).
 
 console.log(left, right);
-
+// left становится 1, потом 2
+// right становится 3, потом 2
