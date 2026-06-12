@@ -21,22 +21,22 @@
 // }
 
 // Пример.
-const reverseString = (str) => {
-  let arr = [...str]; // преобразуем строку в массив
-  let left = 0;
-  let right = arr.length - 1;
+// const reverseString = (str) => {
+//   let arr = [...str]; // преобразуем строку в массив
+//   let left = 0;
+//   let right = arr.length - 1;
 
-  while (left < right) {
-    // Обмен значений через деструктуризацию
-    [arr[left], arr[right]] = [arr[right], arr[left]];
-    left++;
-    right--;
-  }
+//   while (left < right) {
+//     // Обмен значений через деструктуризацию
+//     [arr[left], arr[right]] = [arr[right], arr[left]];
+//     left++;
+//     right--;
+//   }
 
-  return arr.join("");
-};
+//   return arr.join("");
+// };
 
-// Проверка
-console.log(reverseString("hello")); // "olleh
+// // Проверка
+// console.log(reverseString("hello")); // "olleh
 
 // Меняем местами, двигаем оба. Результат: olleh
