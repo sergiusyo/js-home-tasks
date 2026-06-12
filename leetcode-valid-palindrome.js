@@ -25,3 +25,16 @@
 // console.log(isPalindrome("A man a plan a canal Panama")); // true
 // console.log(isPalindrome("raceacar")); // false
 // console.log(isPalindrome("")); // true
+
+// Трассировка Valid Palindrome.
+// Строка: "racecar"
+
+// r  a  c  e  c  a  r
+// ↑                 ↑ // стрелками отмечены индексы 0 и 6
+// 0  1  2  3  4  5  6
+
+// Шаг	left	right	s[left]	s[right]	Совпадают?	Действие
+// 1	0	    6	    r	    r	            ✓	    left=1, right=5
+// 2	1	    5	    a	    a	            ✓	    left=2, right=4
+// 3	2	    4	    c	    c	            ✓	    left=3, right=3
+// 4	3	    3	           left == right → выход → return True ✓
