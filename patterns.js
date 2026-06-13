@@ -47,7 +47,7 @@ function reverseString(str) {
   return arr.join("");
 }
 
-console.log(reverseString("hello"));
+// console.log(reverseString("hello"));
 
 // Пример.
 // const reverseString = (str) => {
