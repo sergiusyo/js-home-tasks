@@ -30,3 +30,5 @@ function countDivisors(n) {
 }
 
 console.log(countDivisors(12)); // Выведет: 6
+
+// Сумма всех делителей.
