@@ -32,3 +32,22 @@ function countDivisors(n) {
 console.log(countDivisors(12)); // Выведет: 6
 
 // Сумма всех делителей.
+
+function sumDivisors(n) {
+  // Находим целую часть квадратного корня из n
+  const sqrtN = Math.floor(Math.sqrt(n));
+  let total = 0;
+
+  // Перебираем потенциальные делители от 1 до sqrt(n)
+  for (let d = 1; d <= sqrtN; d++) {
+    if (n % d === 0) {
+      // Если d является делителем, то n / d тоже делитель.
+      // Проверяем, чтобы не прибавить корень дважды, если n — полный квадрат.
+      total += d + (d !== n / d ? n / d : 0);
+    }
+  }
+  return total;
+}
+
+// Пример использования:
+console.log(sumDivisors(6)); // Выведет: 12
