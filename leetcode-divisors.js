@@ -22,6 +22,8 @@ function isThree(n) {
   return sqrtN === Math.floor(sqrtN) && isPrime(sqrtN); // isPrime(sqrtN) — проверяет, является ли корень простым числом
 }
 
-// --- Примеры использования ---
-console.log(isThree(4)); // true (делители: 1, 2, 4)
-console.log(isThree(2)); // false
+// console.log(isThree(4)); // true
+// console.log(isThree(2)); // false
+
+// Дано целое число num. Вернуть true, если это совершенное число (сумма собственных делителей = num).
+var checkPerfectNumber = function (num) {};
