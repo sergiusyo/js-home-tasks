@@ -26,4 +26,21 @@ function isThree(n) {
 // console.log(isThree(2)); // false
 
 // Дано целое число num. Вернуть true, если это совершенное число (сумма собственных делителей = num).
-var checkPerfectNumber = function (num) {};
+function isPerfectNumber(num) {
+    if (num <= 1) return false;
+    
+    let sumOfDivisors = 0;
+    
+    // Ищем собственные делители (до num / 2)
+    for (let i = 1; i <= num / 2; i++) {
+        if (num % i === 0) {
+            sumOfDivisors += i;
+        }
+    }
+    
+    return sumOfDivisors === num;
+}
+
+// Проверка
+// console.log(isPerfectNumber(28));   // true
+
