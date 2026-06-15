@@ -51,4 +51,4 @@ function sumDivisors(n) {
   return total;
 }
 
-console.log(sumDivisors(6));
+// console.log(sumDivisors(6));
