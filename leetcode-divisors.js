@@ -46,5 +46,4 @@ function checkPerfectNumber(num) {
   // иначе false
 }
 
-Проверка
-console.log(checkPerfectNumber(28));   // true
+// console.log(checkPerfectNumber(28));   // true
