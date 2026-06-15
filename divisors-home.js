@@ -28,7 +28,7 @@ function countDivisors(n) {
   return count;
 }
 
-console.log(countDivisors(12)); // Выведет: 6
+// console.log(countDivisors(12)); // Выведет: 6
 
 // Сумма всех делителей.
 function sumDivisors(n) {
