@@ -26,21 +26,25 @@ function isThree(n) {
 // console.log(isThree(2)); // false
 
 // Дано целое число num. Вернуть true, если это совершенное число (сумма собственных делителей = num).
-function isPerfectNumber(num) {
-    if (num <= 1) return false;
-    
-    let sumOfDivisors = 0;
-    
-    // Ищем собственные делители (до num / 2)
-    for (let i = 1; i <= num / 2; i++) {
-        if (num % i === 0) {
-            sumOfDivisors += i;
-        }
+function checkPerfectNumber(num) {
+  if (num <= 1) return false; // 0, 1 и отриц. числа не м/б совершенными
+
+  let sumOfDivisors = 0; // накопитель суммы всех собственных делителей
+
+  // Ищем собственные делители (до num / 2)
+  for (let i = 1; i <= num / 2; i++) {
+    // num / 2 - у числа не м/б СД больше его половины (кроме его самого)
+    // для 28 это 14 (28 / 2)
+    if (num % i === 0) {
+      // проверяет, делится ли num на i без остатка. Если да, то i
+      // добавляется к сумме делителей
+      sumOfDivisors += i;
     }
-    
-    return sumOfDivisors === num;
+  }
+
+  return sumOfDivisors === num; // если сумма СД равна исходному числу - возвращает true
+  // иначе false
 }
 
 // Проверка
-// console.log(isPerfectNumber(28));   // true
-
+// console.log(checkPerfectNumber(28));   // true
