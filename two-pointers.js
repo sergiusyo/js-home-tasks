@@ -63,15 +63,15 @@
 // left становится 1, потом 2
 // right становится 3, потом 2
 
-let arr = [5, 18, 3, 47, 22];
-let n = arr.length;
+// let arr = [5, 18, 3, 47, 22];
+// let n = arr.length;
 
-let left = 0;
-let right = n - 1;
+// let left = 0;
+// let right = n - 1;
 
-while (left < right) {    
-    left++
-    right--
-}
+// while (left < right) {    
+//     left++
+//     right--
+// }
 
-console.log(left, right);
+// console.log(left, right);
