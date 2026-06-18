@@ -62,7 +62,6 @@ function getDivisors(n) {
   for (let d = 1; d <= sqrtN; d++) {
     if (n % d === 0) {
       // Если остаток от деления равен 0, значит d - делитель. Он ВСЕГДА добавляется в массив small
-
       // Если остаток от деления равен 0, значит d - делитель числа n
 
       small.push(d);
@@ -84,10 +83,10 @@ function getDivisors(n) {
   // small = [1, 2, 3, 6]
   // large = [36, 18, 12]
   // large.reverse() = [12, 18, 36]
-  // Результат: [1, 2, 3, 6, 12, 18, 36] ✅
+  // Результат: [1, 2, 3, 4, 6, 9, 12, 18, 36] ✅
 
   // large.reverse() - разворачивает массив больших делителей
   // small.concat(...) - объединяет массивы
 }
 
-// console.log(getDivisors(36));
+console.log(getDivisors(36));
