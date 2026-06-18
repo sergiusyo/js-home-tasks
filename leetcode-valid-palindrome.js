@@ -26,6 +26,43 @@
 // console.log(isPalindrome("raceacar")); // false
 // console.log(isPalindrome("")); // true
 
+var isPalindrome = function (s) {
+  // Вспомогательная функция для проверки буквенно-цифровых символов
+  function isAlphanumeric(char) {
+    return /[a-zA-Z0-9]/.test(char);
+  }
+
+  if (s.length === 0) return true;
+
+  let left = 0;
+  let right = s.length - 1;
+
+  while (left < right) {
+    // Пропускаем небуквенно-цифровые символы слева
+    while (left < right && !isAlphanumeric(s[left])) {
+      left++;
+    }
+    // Пропускаем небуквенно-цифровые символы справа
+    while (left < right && !isAlphanumeric(s[right])) {
+      right--;
+    }
+
+    // Сравниваем символы (приводим к нижнему регистру)
+    if (s[left].toLowerCase() !== s[right].toLowerCase()) {
+      return false;
+    }
+
+    left++;
+    right--;
+  }
+
+  return true;
+};
+
+// console.log(isPalindrome("A man a plan a canal Panama")); // true
+// console.log(isPalindrome("raceacar")); // false
+// console.log(isPalindrome("")); // true
+
 // Трассировка Valid Palindrome.
 // Строка: "racecar"
 
