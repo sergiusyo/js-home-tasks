@@ -65,29 +65,4 @@ const windowSize = 3;
 
 // Вызов функции и вывод результата в консоль
 const maxSubarraySum = maxSum(numbers, windowSize);
-console.log(maxSubarraySum); // Выведет: 9
-
-
-
-function maxSum(nums, k) {
-  
-  let windowSum = 0; // хранит текущую сумму элементов в "окне" (подмножестве) длиной k
-  for (let i = 0; i < k; i++) {
-    windowSum += nums[i];
-  }
-  let result = windowSum;
-
-  for (let i = k; i < nums.length; i++) {
-    windowSum = windowSum + nums[i] - nums[i - k]; //
-    result = Math.max(result, windowSum);     
-  }
-
-  return result;
-}
-
-const numbers = [2, 1, 5, 1, 3, 2];
-const windowSize = 3;
-
-// Вызов функции и вывод результата в консоль
-const maxSubarraySum = maxSum(numbers, windowSize);
-console.log(maxSubarraySum); // Выведет: 9
+// console.log(maxSubarraySum); // Выведет: 9
