@@ -1,4 +1,4 @@
-// Найти два числа в отсортированном массиве numbers, которые в сумме дают target. 
+// Найти два числа в отсортированном массиве numbers, которые в сумме дают target.
 var twoSum = function (numbers, target) {
   let left = 0;
   let right = numbers.length - 1;
