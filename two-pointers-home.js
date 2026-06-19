@@ -14,10 +14,10 @@ function reversedArray(arr) {
 }
 
 const myArray = [1, 2, 3, 4, 5];
-console.log("Исходный массив:", myArray);
+// console.log("Исходный массив:", myArray);
 
 reversedArray(myArray);
-console.log("Перевернутый массив:", myArray);
+// console.log("Перевернутый массив:", myArray);
 
 // Является ли "level" палиндромом?
 function reversedString(str) {
@@ -34,7 +34,7 @@ function reversedString(str) {
   return arr.join("");
 }
 
-console.log(reversedString("level")); // палиндром!
+// console.log(reversedString("level")); // палиндром!
 
 // // Есть ли пара с суммой?
 const arr = [1, 3, 5, 7, 9];
@@ -48,7 +48,7 @@ while (left < right) {
   const currentSum = arr[left] + arr[right];
 
   if (currentSum === target) {
-    console.log(`Пара найдена: ${arr[left]} и ${arr[right]}`);
+    // console.log(`Пара найдена: ${arr[left]} и ${arr[right]}`);
     break; // // или return true из функции
   } else if (currentSum < target) {
     // Если сумма меньше цели, двигаем левый указатель вправо,
