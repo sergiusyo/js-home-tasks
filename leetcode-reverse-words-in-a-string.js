@@ -7,4 +7,4 @@ var reverseWords = function (s) {
   return result;
 };
 
-console.log(reverseWords("Let's take LeetCode contest"));
+// console.log(reverseWords("Let's take LeetCode contest"));
