@@ -91,3 +91,18 @@ while (left < right) {
 
 // const maxSubarraySum = maxSum(numbers, windowSize);
 // console.log("максимальная сумма подмассива:", maxSubarraySum);
+
+var findMaxAverage = function (nums, k) {
+  let windowSum = 0;
+  for (let i = 0; i < k; i++) {
+    windowSum += nums[i];
+  }
+  let result = windowSum;
+
+  for (let i = k; i < nums.length; i++) {
+    windowSum = windowSum + nums[i] - nums[i - k];
+    result = Math.max(result, windowSum);
+  }
+
+  return result / k;
+};
