@@ -113,27 +113,28 @@ console.log(countDigits(1248)); // 4
 
 // Дано целое num. Найти два числа, произведение которых равно num+1 или num+2, и у которых наименьшая разность.
 var closestDivisors = function (num) {
+  // Находит два множителя числа n, которые наиболее близки друг к другу
   const findClosestFactors = (n) => {
-    // Начинаем поиск с целой части квадратного корня числа
+    // 9
     for (let i = Math.floor(Math.sqrt(n)); i > 0; i--) {
       if (n % i === 0) {
-        return [i, n / i];
+        return [i, n / i]; // [3, 9 / 3], т.е. [3, 3])
       }
     }
     return [1, n]; // Базовый случай для простых чисел
   };
 
-  const target1 = num + 1;
-  const target2 = num + 2;
+  const target1 = num + 1; // 8 + 1 = 9
+  const target2 = num + 2; // 8 + 2 = 10
 
   const pair1 = findClosestFactors(target1);
   const pair2 = findClosestFactors(target2);
 
   // Сравниваем абсолютную разность элементов в парах
-  const diff1 = Math.abs(pair1[0] - pair1[1]);
-  const diff2 = Math.abs(pair2[0] - pair2[1]);
+  const diff1 = Math.abs(pair1[0] - pair1[1]); // разница diff1 = |3 - 3| = 0
+  const diff2 = Math.abs(pair2[0] - pair2[1]); // разница diff2 = |2 - 5| = 3
 
-  return diff1 <= diff2 ? pair1 : pair2;
+  return diff1 <= diff2 ? pair1 : pair2; // 0 <= 3 return pair1
 };
 
-console.log(closestDivisors(8));
+console.log(closestDivisors(8)); // [3, 3]
