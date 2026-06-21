@@ -57,7 +57,8 @@ function checkPerfectNumber(num) {
     return false;
   }
 
-  let sumOfDivisors = 1; // единственный универсальный делитель
+  let sumOfDivisors = 1; // Сумма собственных делителей. Начинается с 1,
+  // т.к. это единственный универсальный делитель
 
   const sqrtN = Math.floor(Math.sqrt(num));
 
@@ -67,7 +68,7 @@ function checkPerfectNumber(num) {
       // Находим парный делитель
       const pairedDivisor = num / i;
 
-      // является ли парный делитель тем же самым числом
+      //не является ли парный делитель тем же самым числом  --> (if (7 !== 4 && 7 !== 28))
       if (pairedDivisor !== i && pairedDivisor !== num) {
         sumOfDivisors += pairedDivisor;
       }
