@@ -29,7 +29,7 @@
 //     return false;
 //   }
 
-//   if (!Number.isInteger(Math.sqrt(n))) {
+// -  if (!Number.isInteger(Math.sqrt(n))) {
 //     // число, НЕ являющееся квадратным корнем числа
 //     return false;
 //   }
@@ -52,30 +52,61 @@
 
 // Perfect Number.
 
-function checkPerfectNumber(num) {
-  if (num < 2) {
-    return false;
+// function checkPerfectNumber(num) {
+//   if (num < 2) {
+//     return false;
+//   }
+
+//   let sumOfDivisors = 1; // Сумма собственных делителей. Начинается с 1,
+//   // т.к. это единственный универсальный делитель
+
+//   const sqrtN = Math.floor(Math.sqrt(num));
+
+//   for (let i = 2; i <= sqrtN; i++) {
+//     if (num % i === 0) {
+//       sumOfDivisors += i;
+//       // Находим парный делитель
+//       const pairedDivisor = num / i;
+
+//       //не является ли парный делитель тем же самым числом  --> (if (7 !== 4 && 7 !== 28))
+//       if (pairedDivisor !== i && pairedDivisor !== num) {
+//         sumOfDivisors += pairedDivisor;
+//       }
+//     }
+//   }
+//   return sumOfDivisors === num;
+// }
+
+// console.log(checkPerfectNumber(28)); // true
+// console.log(checkPerfectNumber(7)); // false
+
+// Count the Digits That Divide a Number.
+// Дано целое число num. Вернуть количество цифр числа num, на которые num делится без остатка.
+var countDigits = function (num) {
+  // Если число 0, возвращаем 0, так как на 0 делить нельзя
+  if (num === 0) {
+    return 0;
   }
 
-  let sumOfDivisors = 1; // Сумма собственных делителей. Начинается с 1,
-  // т.к. это единственный универсальный делитель
+  // Берём абсолютное значение для корректной работы с отрицательными числами
+  const absNum = Math.abs(num);
 
-  const sqrtN = Math.floor(Math.sqrt(num));
+  // Преобразуем число в строку, разбиваем на символы и преобразуем их в числа
+  const digits = String(absNum)
+    .split("")
+    .map((digit) => parseInt(digit, 10));
 
-  for (let i = 2; i <= sqrtN; i++) {
-    if (num % i === 0) {
-      sumOfDivisors += i;
-      // Находим парный делитель
-      const pairedDivisor = num / i;
-
-      //не является ли парный делитель тем же самым числом  --> (if (7 !== 4 && 7 !== 28))
-      if (pairedDivisor !== i && pairedDivisor !== num) {
-        sumOfDivisors += pairedDivisor;
-      }
+  // Подсчитываем количество цифр, на которые число делится без остатка
+  let count = 0;
+  for (const digit of digits) {
+    if (digit !== 0 && absNum % digit === 0) {
+      count++;
     }
   }
-  return sumOfDivisors === num;
-}
 
-console.log(checkPerfectNumber(28)); // true
-console.log(checkPerfectNumber(7)); // false
+  return count;
+};
+
+console.log(countDigits(7));
+console.log(countDigits(121));
+console.log(countDigits(1248));
