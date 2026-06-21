@@ -1,5 +1,7 @@
+// Three divisors. 
 // Верните значение true, если n имеет ровно три положительных делителя.
 // В противном случае верните значение false.
+// 
 // function isThree(n) {
 //   if (n < 4) return false; // наименьшее число с тремя делителями это 4
 
@@ -48,6 +50,7 @@ var isThree = function (n) {
 // console.log(isThree(9)); // true
 // console.log(isThree(16)); // false
 
+// Perfect Number. 
 // Дано целое число num. Вернуть true, если это совершенное число (сумма собственных делителей = num).
 function checkPerfectNumber(num) {
   if (num <= 1) return false; // 0, 1 и отриц. числа не м/б совершенными
