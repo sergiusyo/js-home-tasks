@@ -141,6 +141,43 @@ console.log(closestDivisors(8)); // [3, 3]
 
 // Four Divisors.
 // Дан массив nums. Для каждого числа с ровно 4 делителями найти сумму его делителей. Вернуть общую сумму.
+/**
+ * @param {number[]} nums - Массив целых положительных чисел.
+ * @return {number} - Сумма делителей всех чисел, имеющих ровно четыре делителя.
+ */
 var sumFourDivisors = function (nums) {
-  let total = 0;
+  let total_sum = 0;
+
+  for (const num of nums) {
+    let current_sum = 0;
+    let count = 0;
+
+    // Перебираем потенциальные делители до квадратного корня из num
+    const sqrt_num = Math.sqrt(num);
+    for (let i = 1; i <= sqrt_num; i++) {
+      if (num % i === 0) {
+        // i является делителем
+        const divisor_pair = num / i;
+
+        if (i === divisor_pair) {
+          // Случай, когда делитель является квадратным корнем числа
+          current_sum += i;
+          count += 1;
+        } else {
+          // Добавляем пару делителей
+          current_sum += i + divisor_pair;
+          count += 2;
+        }
+      }
+    }
+
+    // Если у числа ровно 4 делителя, добавляем их сумму к общему результату
+    if (count === 4) {
+      total_sum += current_sum;
+    }
+  }
+
+  return total_sum;
 };
+
+console.log(sumFourDivisors([21, 4, 7]));
