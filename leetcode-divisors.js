@@ -52,33 +52,33 @@
 
 // Perfect Number.
 
-// function checkPerfectNumber(num) {
-//   if (num < 2) {
-//     return false;
-//   }
+function checkPerfectNumber(num) {
+  if (num < 2) {
+    return false;
+  }
 
-//   let sumOfDivisors = 1; // Сумма собственных делителей. Начинается с 1,
-//   // т.к. это единственный универсальный делитель
+  let sumOfDivisors = 1; // сумма собственных делителей. Начинается с 1,
+  // т.к. это единственный универсальный делитель
 
-//   const sqrtN = Math.floor(Math.sqrt(num));
+  const sqrtN = Math.floor(Math.sqrt(num)); // оптимизация с квадратным корнем
 
-//   for (let i = 2; i <= sqrtN; i++) {
-//     if (num % i === 0) {
-//       sumOfDivisors += i;
-//       // Находим парный делитель
-//       const pairedDivisor = num / i;
+  for (let i = 2; i <= sqrtN; i++) {
+    if (num % i === 0) {
+      sumOfDivisors += i; // добавляем найденный делитель
+      // находим парный делитель
+      const pairedDivisor = num / i;
 
-//       //не является ли парный делитель тем же самым числом  --> (if (7 !== 4 && 7 !== 28))
-//       if (pairedDivisor !== i && pairedDivisor !== num) {
-//         sumOfDivisors += pairedDivisor;
-//       }
-//     }
-//   }
-//   return sumOfDivisors === num;
-// }
+      // не является ли парный делитель тем же самым числом  --> (if (7 !== 4 && 7 !== 28))
+      if (pairedDivisor !== i && pairedDivisor !== num) {
+        sumOfDivisors += pairedDivisor;
+      }
+    }
+  }
+  return sumOfDivisors === num;
+}
 
-// console.log(checkPerfectNumber(28)); // true
-// console.log(checkPerfectNumber(7)); // false
+console.log(checkPerfectNumber(28)); // true
+console.log(checkPerfectNumber(7)); // false
 
 // Count the Digits That Divide a Number.
 // Дано целое число num. Вернуть количество цифр числа num, на которые num делится без остатка.
