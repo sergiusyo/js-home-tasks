@@ -127,10 +127,11 @@ var closestDivisors = function (num) {
   const target1 = num + 1; // 8 + 1 = 9
   const target2 = num + 2; // 8 + 2 = 10
 
+  // Выбираем пару с минимальной разницей
   const pair1 = findClosestFactors(target1);
   const pair2 = findClosestFactors(target2);
 
-  // Сравниваем абсолютную разность элементов в парах
+  // Сравниваем абсолютную разность элементов в парах. Math.abs() гарантирует, что разница всегда положительная
   const diff1 = Math.abs(pair1[0] - pair1[1]); // разница diff1 = |3 - 3| = 0
   const diff2 = Math.abs(pair2[0] - pair2[1]); // разница diff2 = |2 - 5| = 3
 
