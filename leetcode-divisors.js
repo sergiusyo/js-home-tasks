@@ -138,3 +138,7 @@ var closestDivisors = function (num) {
 };
 
 console.log(closestDivisors(8)); // [3, 3]
+
+// Four Divisors.
+// Дан массив nums. Для каждого числа с ровно 4 делителями найти сумму его делителей. Вернуть общую сумму.
+var sumFourDivisors = function (nums) {};
