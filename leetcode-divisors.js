@@ -160,7 +160,7 @@ var sumFourDivisors = function (nums) {
           currentSum += i;
           count += 1;
         } else {
-          // Добавляем оба делителя в сумму
+          // если делители разные, счетчик увеличивается на 2
           currentSum += i + divisorPair;
           count += 2;
         }
@@ -176,4 +176,4 @@ var sumFourDivisors = function (nums) {
   return totalSum;
 };
 
-console.log(sumFourDivisors([21, 4, 7]));
+// console.log(sumFourDivisors([21, 4, 7]));
