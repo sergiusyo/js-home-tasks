@@ -68,7 +68,8 @@ function checkPerfectNumber(num) {
       // находим парный делитель
       const pairedDivisor = num / i;
 
-      // не является ли парный делитель тем же самым числом  --> (if (7 !== 4 && 7 !== 28))
+      // добавляем парный делитель, если он не является ли квадратным корнем i
+      // или тем же самым числом num  --> (if (например, 16 !== 4 && 7 !== 28))
       if (pairedDivisor !== i && pairedDivisor !== num) {
         sumOfDivisors += pairedDivisor;
       }
@@ -77,8 +78,9 @@ function checkPerfectNumber(num) {
   return sumOfDivisors === num;
 }
 
-console.log(checkPerfectNumber(28)); // true
-console.log(checkPerfectNumber(7)); // false
+// console.log(checkPerfectNumber(28)); // true
+// console.log(checkPerfectNumber(7)); // false
+// console.log(checkPerfectNumber(16)); // false
 
 // Count the Digits That Divide a Number.
 // Дано целое число num. Вернуть количество цифр числа num, на которые num делится без остатка.
