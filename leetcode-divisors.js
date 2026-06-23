@@ -107,9 +107,9 @@ var countDigits = function (num) {
   return count;
 };
 
-console.log(countDigits(7)); // 1
-console.log(countDigits(121)); // 2
-console.log(countDigits(1248)); // 4
+// console.log(countDigits(7)); // 1
+// console.log(countDigits(121)); // 2
+// console.log(countDigits(1248)); // 4
 
 // Дано целое num. Найти два числа, произведение которых равно num+1 или num+2, и у которых наименьшая разность.
 var closestDivisors = function (num) {
@@ -141,4 +141,6 @@ console.log(closestDivisors(8)); // [3, 3]
 
 // Four Divisors.
 // Дан массив nums. Для каждого числа с ровно 4 делителями найти сумму его делителей. Вернуть общую сумму.
-var sumFourDivisors = function (nums) {};
+var sumFourDivisors = function (nums) {
+  let total = 0;
+};
