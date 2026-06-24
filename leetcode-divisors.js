@@ -157,6 +157,7 @@ var sumFourDivisors = function (nums) {
 
     for (let i = 1; i <= sqrtN; i++) {
       if (num % i === 0) {
+        // вычисляем парный делитель
         const divisorPair = num / i;
 
         // Если делитель совпадает со своей парой (полный квадрат)
