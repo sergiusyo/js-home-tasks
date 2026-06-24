@@ -69,7 +69,7 @@ function checkPerfectNumber(num) {
       const pairedDivisor = num / i;
 
       // добавляем парный делитель, если он не является квадратным корнем i
-      // или тем же самым числом num  --> (if (например, 16 !== 4 && 7 !== 28))
+      // или самым числом num  --> (if (например, 16 !== 4 && 7 !== 28))
       if (pairedDivisor !== i && pairedDivisor !== num) {
         sumOfDivisors += pairedDivisor;
       }
