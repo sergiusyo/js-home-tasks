@@ -24,26 +24,26 @@
 // // return sqrtN === Math.floor(sqrtN) && isPrime(sqrtN); // isPrime(sqrtN) — проверяет, является ли корень простым числом
 // }
 
-// var isThree = function (n) {
-//   if (n === 1) {
-//     return false;
-//   }
+var isThree = function (n) {
+  if (n === 1) {
+    return false;
+  }
 
-// -  if (!Number.isInteger(Math.sqrt(n))) {
-//     // число, НЕ являющееся квадратным корнем числа
-//     return false;
-//   }
+  if (!Number.isInteger(Math.sqrt(n))) {
+    // число, НЕ являющееся квадратным корнем числа
+    return false;
+  }
 
-//   for (let i = 2; i <= Math.sqrt(n); i++) {
-//     if (n % i == 0 && i != Math.sqrt(n)) {
-//       // если i делит исходное число n без остатка и
-//       // при этом i не равно самому корню, то мы нашли нетривиальный делитель.
-//       return false;
-//     }
-//   }
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i == 0 && i != Math.sqrt(n)) {
+      // если i делит исходное число n без остатка и
+      // при этом i не равно самому корню, то мы нашли нетривиальный делитель.
+      return false;
+    }
+  }
 
-//   return true;
-// };
+  return true;
+};
 
 // console.log(isThree(4)); // true
 // console.log(isThree(2)); // false
