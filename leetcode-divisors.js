@@ -98,6 +98,19 @@ var countDigits = function (num) {
     .split("")
     .map((digit) => parseInt(digit, 10));
 
+  n = 23762
+  count_div = 0;
+
+  while (n > 0) {
+    last_digit = n % 10;
+    n = Math.floor(n / 10);
+    console.log(last_digit);
+    if (n % last_digit === 0) {
+      count_div++;
+    }
+  }
+  console.log(count_div);
+
   // Подсчитываем количество цифр, на которые число делится без остатка
   let count = 0;
   for (const digit of digits) {
@@ -107,7 +120,7 @@ var countDigits = function (num) {
   }
 
   return count;
-};
+};;
 
 // console.log(countDigits(7)); // 1
 // console.log(countDigits(121)); // 2
@@ -181,4 +194,4 @@ var sumFourDivisors = function (nums) {
   return totalSum;
 };
 
-// console.log(sumFourDivisors([21, 4, 7]));
+console.log(sumFourDivisors([21, 4, 7]));
