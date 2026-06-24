@@ -154,6 +154,7 @@ var sumFourDivisors = function (nums) {
 
     // Ищем делители до корня из числа включительно
     const sqrtN = Math.floor(Math.sqrt(num));
+
     for (let i = 1; i <= sqrtN; i++) {
       if (num % i === 0) {
         const divisorPair = num / i;
