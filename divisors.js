@@ -89,4 +89,4 @@ function getDivisors(n) {
   // small.concat(...) - объединяет массивы
 }
 
-console.log(getDivisors(36));
+// console.log(getDivisors(36));
