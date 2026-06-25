@@ -98,18 +98,18 @@ var countDigits = function (num) {
     .split("")
     .map((digit) => parseInt(digit, 10));
 
-  n = 23762
+  n = 23762;
   count_div = 0;
 
-  while (n > 0) {
-    last_digit = n % 10;
-    n = Math.floor(n / 10);
-    console.log(last_digit);
-    if (n % last_digit === 0) {
-      count_div++;
-    }
-  }
-  console.log(count_div);
+  // while (n > 0) {
+  //   last_digit = n % 10;
+  //   n = Math.floor(n / 10);
+  //   console.log(last_digit);
+  //   if (n % last_digit === 0) {
+  //     count_div++;
+  //   }
+  // }
+  // console.log(count_div);
 
   // Подсчитываем количество цифр, на которые число делится без остатка
   let count = 0;
@@ -120,7 +120,7 @@ var countDigits = function (num) {
   }
 
   return count;
-};;
+};
 
 // console.log(countDigits(7)); // 1
 // console.log(countDigits(121)); // 2
@@ -153,7 +153,7 @@ var closestDivisors = function (num) {
   return diff1 <= diff2 ? pair1 : pair2; // 0 <= 3 return pair1
 };
 
-console.log(closestDivisors(8)); // [3, 3]
+// console.log(closestDivisors(8)); // [3, 3]
 
 // Four Divisors.
 // Дан массив nums. Для каждого числа с ровно 4 делителями найти сумму его делителей. Вернуть общую сумму.
@@ -194,4 +194,4 @@ var sumFourDivisors = function (nums) {
   return totalSum;
 };
 
-console.log(sumFourDivisors([21, 4, 7]));
+// console.log(sumFourDivisors([21, 4, 7]));
