@@ -24,9 +24,13 @@ scores.sort((a, b) => b - a);
 // console.log(scores.slice(0, 3));
 
 // Убрать дубли
-let arr = [1, 2, 2, 3, 3, 3, 4];
-let uniq = [];
-for (let x of arr) if (!uniq.includes(x)) uniq.push(x);
-console.log(uniq);
+// let arr = [1, 2, 2, 3, 3, 3, 4];
+// let uniq = [];
+// for (let x of arr) if (!uniq.includes(x)) uniq.push(x);
+// console.log(uniq);
 
 // Объединить и отсортировать
+// let a = prompt("Список 1 (через запятую):").split(",").map(Number);
+// let b = prompt("Список 2 (через запятую):").split(",").map(Number);
+// let result = a.concat(b).sort((a, b) => a - b);
+// console.log(result);
