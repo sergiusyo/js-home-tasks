@@ -16,3 +16,11 @@ firstName.shift();
 console.log(firstName);
 
 // 📝 Задача 4: Сумма массива
+let nums = [5, 10, 15, 20, 25];
+let sum = 0;
+
+for (const n of nums) {
+  sum += n;
+}
+
+console.log(sum);
