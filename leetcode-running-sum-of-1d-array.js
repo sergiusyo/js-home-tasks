@@ -1,10 +1,10 @@
 // Один проход, на каждом шаге прибавляешь текущий элемент к предыдущей сумме. Чище не бывает.
 
-var runningSum = function (nums) {
-  for (let i = 1; i < nums.length; i++) {
-    nums[i] += nums[i - 1]; // На каждом шаге к текущему элементу прибавляется значение предыдущего.
+var runningSum = function (nums1) {
+  for (let i = 1; i < nums1.length; i++) {
+    nums1[i] += nums1[i - 1]; // На каждом шаге к текущему элементу прибавляется значение предыдущего.
   }
-  return nums;
+  return nums1;
 };
 
-// console.log(runningSum([1, 2, 3, 4]));
+// console.log(runningSum([1, 2, 3, 4])); // 1, 3, 6, 10
