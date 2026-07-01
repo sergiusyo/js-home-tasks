@@ -18,8 +18,8 @@
 // console.log(q);
 
 // Топ-3
-let scores = [7, 3, 9, 1, 5, 8, 2, 6, 4, 10];
-scores.sort((a, b) => b - a);
+// let scores = [7, 3, 9, 1, 5, 8, 2, 6, 4, 10];
+// scores.sort((a, b) => b - a);
 // console.log(scores);
 // console.log(scores.slice(0, 3));
 
