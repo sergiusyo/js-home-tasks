@@ -9,6 +9,21 @@ let str = "Javascript";
 console.log(Array.from(str)); // ['J', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't']
 console.log(Array.from(str).length); // 10
 
+// let str = "Javascript";
+// console.log(str.split('')); // ['J', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't']
+// console.log(str.split('').length); // 10
+
+// let str = "Javascript";
+// let arr = [];
+
+// перебираем каждый символ строки и добавляем в массив
+// for (const char of str) {
+//   arr.push(char)
+// }
+
+// console.log(arr); 
+// console.log(arr.length); 
+
 // 📝 Задача 3: Очередь
 let firstName = ["Аня", "Боря", "Вася"];
 firstName.push("Галя");
