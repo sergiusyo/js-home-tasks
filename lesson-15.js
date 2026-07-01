@@ -7,10 +7,11 @@
 // console.log(stack);
 
 // Очередь
-let q = [1, 2, 3, 4, 5];
-console.log(q.shift());
-console.log(q.shift());
-console.log(q);
+// let q = [1, 2, 3, 4, 5];
+// console.log(q)
+// console.log(q.shift());
+// console.log(q.shift());
+// console.log(q);
 
 // Вставить в середину
 // let q = [1, 2, 4, 5];
@@ -18,9 +19,9 @@ console.log(q);
 // console.log(q);
 
 // Топ-3
-// let scores = [7, 3, 9, 1, 5, 8, 2, 6, 4, 10];
-// scores.sort((a, b) => b - a);
-// console.log(scores);
+let scores = [7, 3, 9, 1, 5, 8, 2, 6, 4, 10];
+scores.sort((a, b) => b - a);
+console.log(scores);
 // console.log(scores.slice(0, 3));
 
 // Убрать дубли
@@ -30,7 +31,7 @@ console.log(q);
 // console.log(uniq);
 
 // Объединить и отсортировать
-// let a = prompt("Список 1 (через запятую):").split(",").map(Number);
-// let b = prompt("Список 2 (через запятую):").split(",").map(Number);
-// let result = a.concat(b).sort((a, b) => a - b);
-// console.log(result);
+let a = prompt("Список 1 (через запятую):").split(",").map(Number);
+let b = prompt("Список 2 (через запятую):").split(",").map(Number);
+let result = a.concat(b).sort((a, b) => a - b);
+console.log(result);
