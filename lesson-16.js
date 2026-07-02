@@ -9,3 +9,9 @@
 // Сумма reduce
 // let arr = [10, 20, 30, 40, 50];
 // console.log(arr.reduce((acc, x) => acc + x, 0));
+
+// Отрицательные в плюс
+// let arr = [-3, -1, 2, -4, 5];
+// console.log(arr.map(Math.abs))
+
+// Средний балл
