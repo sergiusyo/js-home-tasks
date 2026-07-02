@@ -7,3 +7,5 @@
 // console.log(words.filter((w) => w.length > 3));
 
 // Сумма reduce
+// let arr = [10, 20, 30, 40, 50];
+// console.log(arr.reduce((acc, x) => acc + x, 0));
