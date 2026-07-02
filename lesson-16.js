@@ -22,12 +22,12 @@
 // console.log("Зачетов: " + passed.length);
 
 // Конвейер
-let nums = prompt("Число"); // 1, -2, 3, -4, 5
-let result = nums
+let inp = prompt("Число"); // 1, -2, 3, -4, 5
+let result = inp
   .split(",")
   .map(Number)
   .filter((x) => x > 0)
   .map((x) => x * x)
   .reduce((acc, x) => acc + x, 0);
 
-console.log("Сумма квадратов: " + result);
+console.log("Сумма квадратов: " + result); // 35
