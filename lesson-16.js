@@ -1,27 +1,27 @@
-// Квадраты
+// // Квадраты
 // let arr = [1, 2, 3, 4, 5]
 // console.log(arr.map(x => x * x))
 
-// Только длинные
+// // Только длинные
 // let words = ["hi", "hello", "js", "javascript", "py"];
 // console.log(words.filter((w) => w.length > 3));
 
-// Сумма reduce
+// // Сумма reduce
 // let arr = [10, 20, 30, 40, 50];
 // console.log(arr.reduce((acc, x) => acc + x, 0));
 
-// Отрицательные в плюс
-// let arr = [-3, -1, 2, -4, 5];
-// console.log(arr.map(Math.abs))
+// // Отрицательные в плюс
+// let array22 = [-3, -1, 2, -4, 5];
+// console.log(array22.map(Math.abs))
 
-// Средний балл
+// // Средний балл
 // let scores = [72, 85, 91, 60, 78];
 // let passed = scores
 //   .map((scores) => (scores >= 70 ? "Зачет" : "Незачет"))
 //   .filter((scores) => scores === "Зачет");
 // console.log("Зачетов: " + passed.length);
 
-// Конвейер
+// // Конвейер
 // let inp = prompt("Число"); // 1, -2, 3, -4, 5
 // let result = inp
 //   .split(",")
