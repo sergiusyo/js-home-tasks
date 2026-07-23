@@ -1,21 +1,21 @@
 // Перепиши функцию
-function add(a, b) {
-  return a + b; // обычная функция
-}
+// function add(a, b) {
+//   return a + b; // обычная функция
+// }
 
 const add2 = (a, b) => {
   return a + b;
 };
 
 // console.log(add(3, 7)); // 10
-// console.log(add2(3, 7)); // 10
+console.log(add2(3, 7)); // 10
 
 // isPositive
 const isPositive = (n) => (n > 0 ? true : false);
 
-// console.log(isPositive(5));
-// console.log(isPositive(-3));
-// console.log(isPositive(0));
+console.log(isPositive(5));
+console.log(isPositive(-3));
+console.log(isPositive(0));
 
 // Числа в пиксели
 const sizes = [10, 20, 50, 100];
