@@ -1,6 +1,6 @@
 // Функции. greet(name)
 function greet(name) {
-  console.log(`Привет, ${name}!`);
+  // console.log(`Привет, ${name}!`);
 }
 
 greet("Аня");
@@ -11,8 +11,8 @@ function square(n) {
   return n ** 2;
 }
 
-console.log(square(4));
-console.log(square(7));
+// console.log(square(4));
+// console.log(square(7));
 
 // max(a, b)
 function max(a, b) {
@@ -26,9 +26,9 @@ function max(a, b) {
 //   return b;
 // }
 
-console.log(max(3, 7));
-console.log(max(10, 5));
-console.log(max(4, 4));
+// console.log(max(3, 7));
+// console.log(max(10, 5));
+// console.log(max(4, 4));
 
 // isEven(n)
 function isEven(n) {
@@ -39,6 +39,6 @@ function isEven(n) {
   }
 }
 
-console.log(isEven(4));
-console.log(isEven(7));
-console.log(isEven(0));
+// console.log(isEven(4));
+// console.log(isEven(7));
+// console.log(isEven(0));
