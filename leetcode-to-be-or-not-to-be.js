@@ -1,9 +1,11 @@
+// Написать функцию, проверяющую, соответствует ли значение ожидаемому
+
 var expect = function (val) {
   return {
     toBe: function (expected) {
       if (val === expected) {
-        // toBe проверяет, равны ли значения val ожидаемым
-        return true;
+        // метод toBe проверяет, равны ли значения val ожидаемым
+        return true; // если равны - true
       } else {
         throw new Error("Not Equal"); // если не равны, выбрасывается ошибка
       }
