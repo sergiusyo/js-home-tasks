@@ -1,8 +1,8 @@
 var createHelloWorld = function () {
-  return function (...args) {
+  return function () {
     return "Hello World";
   };
 };
 
-// const f = createHelloWorld();
-// console.log(f()); // "Hello World"
+const f = createHelloWorld();
+console.log(f()); // "Hello World"
