@@ -1,12 +1,15 @@
 var filter = function (arr, fn) {
-  const result = [];
-  let index = 0;
-  // value получает само значение элемента, а не его индекс
+  const result = []; // Создаем пустой массив для результатов
+  let index = 0; // Счетчик для отслеживания индекса
+
+  // Проходим по каждому элементу массива
   for (const value of arr) {
+    // Вызываем fn с тремя аргументами: элемент, индекс, весь массив
     if (fn(value, index, arr)) {
-      result.push(value);
+      result.push(value); // Если fn вернула true, добавляем элемент
     }
-    index++;
+    index++; // Увеличиваем индекс для следующей итерации
   }
-  return result;
+
+  return result; // Возвращаем отфильтрованный массив
 };
