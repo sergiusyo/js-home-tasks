@@ -4,5 +4,5 @@ var createHelloWorld = function () {
   };
 };
 
-const str = createHelloWorld();
-console.log(str()); // "Hello World"
+// const str = createHelloWorld();
+// console.log(str()); // "Hello World"
