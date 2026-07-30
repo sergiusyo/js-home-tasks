@@ -6,6 +6,7 @@ var reduce = function (nums, fn, init) {
   for (let i = 0; i < nums.length; i++) {
     // проходим по каждому элементу массива
     result = fn(result, nums[i]); // Применяем fn к аккумулятору и текущему элементу
+    // обновляем аккумулятор результатом
   }
 
   return result; // Возвращаем финальный результат
