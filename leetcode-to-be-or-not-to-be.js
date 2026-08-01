@@ -3,7 +3,7 @@
 var expect = function (val) {
   return {
     toBe: function (expected) {
-      if (val === expected) {
+      if (val == expected) {
         // метод toBe проверяет, равны ли значения val ожидаемым
         return true; // если равны - true
       } else {
@@ -21,5 +21,5 @@ var expect = function (val) {
   };
 };
 
-// expect(5).toBe(5);     // true  (число === число)
-// expect(5).toBe("5");   // Error: Not Equal (число !== строка)
+console.log(expect(5).toBe(5));     // true  (число === число)
+console.log(expect(5).toBe("5"));   // Error: Not Equal (число !== строка)
