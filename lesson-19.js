@@ -23,3 +23,34 @@ for (let key in obj) {
   // или с шаблонными строками:
   // console.log(`${key} : ${obj[key]}`);
 }
+
+// 📝 Задача 3: Найди максимум
+// let scores = { JS: 95, Python: 80, Go: 70 };
+// // console.log(Object.entries(scores).filter(([, v]) => v >= 90))
+
+// let maxKey = "", // название языка с максимальным баллом
+//   maxVal = -Infinity; // максимальный балл
+// for (let [key, val] of Object.entries(scores)) {
+//   // Object.entries(scores) преобразует объект в массив пар [ключ, значение]
+//   // Деструктуризация [key, val] сразу извлекает ключ и значение из каждой пары.
+//   if (val > maxVal) {
+//     // Если текущее значение val больше сохранённого максимума, обновляем:
+//     // maxVal — новым рекордным баллом
+//     // maxKey — соответствующим языком
+//     maxVal = val;
+//     maxKey = key;
+//   }
+// }
+// console.log(maxKey + ": " + maxVal);
+
+let scores = { JS: 95, Python: 80, Go: 70 };
+
+let maxKey = "", // название языка с максимальным баллом
+  maxVal = -Infinity; // максимальный балл
+for (let [key, val] of Object.entries(scores)) {
+  if (val > maxVal) {
+    maxVal = val;
+    maxKey = key;
+  }
+}
+console.log(maxKey + ": " + maxVal);
