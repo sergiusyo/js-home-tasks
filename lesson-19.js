@@ -12,4 +12,14 @@ let user = {
 };
 
 // 📝 Задача 2: Перебор через for...in
+let obj = {
+  HTML: 90,
+  CSS: 85,
+  JS: 95,
+};
 
+for (let key in obj) {
+  //   console.log(key + " : " + obj[key]);
+  // или с шаблонными строками:
+  // console.log(`${key} : ${obj[key]}`);
+}
