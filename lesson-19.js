@@ -53,4 +53,6 @@ for (let [key, val] of Object.entries(scores)) {
     maxKey = key;
   }
 }
-console.log(maxKey + ": " + maxVal);
+// console.log(maxKey + ": " + maxVal);
+
+// 📝 Задача 4: Студент
