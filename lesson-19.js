@@ -65,5 +65,5 @@ let student = {
   },
 };
 
-const { name } = student;
+const { name } = student; // извлекаем свойство name
 console.log(`${name}: средняя оценка ${student.average()}`);
