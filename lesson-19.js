@@ -56,3 +56,14 @@ for (let [key, val] of Object.entries(scores)) {
 // console.log(maxKey + ": " + maxVal);
 
 // 📝 Задача 4: Студент
+let student = {
+  name: "Аня",
+  grades: [4, 5, 3, 5],
+  average() {
+    const sum = this.grades.reduce((a, b) => a + b, 0);
+    return sum / this.grades.length;
+  },
+};
+
+const { name } = student;
+console.log(`${name}: средняя оценка ${student.average()}`);
