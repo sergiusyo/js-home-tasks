@@ -11,6 +11,8 @@ let user = {
   },
 };
 
+user.introduce();
+
 // 📝 Задача 2: Перебор через for...in
 let obj = {
   HTML: 90,
