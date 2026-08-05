@@ -45,17 +45,18 @@ for (let key in skills) {
 // }
 // console.log(maxKey + ": " + maxVal);
 
+
 let scores = { JS: 95, Python: 80, Go: 70 };
 
 let maxKey = "", // название языка с максимальным баллом
   maxVal = -Infinity; // максимальный балл
 for (let [key, val] of Object.entries(scores)) {
   if (val > maxVal) {
-    maxVal = val;
+    maxVal = val; // обновляем рекордный балл
     maxKey = key;
   }
 }
-// console.log(maxKey + ": " + maxVal);
+console.log(maxKey + ": " + maxVal);
 
 // 📝 Задача 4: Студент
 let student = {
