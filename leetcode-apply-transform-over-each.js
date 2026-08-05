@@ -10,7 +10,7 @@ var map = function (array, fn) {
 
 // Передаем функцию x => x + 1
 const newArr = map(array, (x) => x + 1);
-console.log(newArr); // 2, 3, 4
+// console.log(newArr); // 2, 3, 4
 
 // Принимает массив arr и функцию-преобразователь fn
 // Проходит по каждому элементу массива
