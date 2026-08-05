@@ -14,14 +14,14 @@ let user = {
 user.introduce();
 
 // 📝 Задача 2: Перебор через for...in
-let obj = {
+let skills = {
   HTML: 90,
   CSS: 85,
   JS: 95,
 };
 
-for (let key in obj) {
-  console.log(key + " : " + obj[key]);
+for (let key in skills) {
+  console.log(key + " : " + skills[key]);
   // или с шаблонными строками:
   // console.log(`${key} : ${obj[key]}`);
 }
