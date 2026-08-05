@@ -19,4 +19,4 @@ const filtered = filter(arr, function (n) {
   return n > 10;
 });
 
-console.log(filtered); // [20, 30]
+// console.log(filtered); // [20, 30]
