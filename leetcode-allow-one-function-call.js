@@ -33,12 +33,12 @@ var once = function (fn) {
 // Не вызывает fn
 // Возвращает undefined
 
-function oneName(name) {
-  console.log(name);
-}
+// function oneName(name) {
+//   console.log(name);
+// }
 
-oneName("Машы");
+// oneName("Машы");
 
-const f = once(oneName);
-f("Маша");
-f("Петя");
+// const f = once(oneName);
+// f("Маша");
+// f("Петя");
