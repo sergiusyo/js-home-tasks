@@ -21,5 +21,5 @@ var expect = function (val) {
   };
 };
 
-console.log(expect(5).toBe(5));     // true  (число === число)
-console.log(expect(5).toBe("5"));   // Error: Not Equal (число !== строка)
+// console.log(expect(5).toBe(5));     // true  (число === число)
+// console.log(expect(5).toBe("5"));   // Error: Not Equal (число !== строка)
