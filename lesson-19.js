@@ -21,7 +21,7 @@ let obj = {
 };
 
 for (let key in obj) {
-  //   console.log(key + " : " + obj[key]);
+  console.log(key + " : " + obj[key]);
   // или с шаблонными строками:
   // console.log(`${key} : ${obj[key]}`);
 }
