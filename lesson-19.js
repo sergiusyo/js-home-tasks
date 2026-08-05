@@ -45,7 +45,6 @@ for (let key in skills) {
 // }
 // console.log(maxKey + ": " + maxVal);
 
-
 let scores = { JS: 95, Python: 80, Go: 70 };
 
 let maxKey = "", // название языка с максимальным баллом
