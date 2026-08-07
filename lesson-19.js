@@ -5,9 +5,9 @@ let user = {
   city: "Москва",
 
   introduce() {
-    console.log(
-      `Привет! Меня зовут ${this.name}, мне ${this.age} лет, я из ${this.city}`,
-    );
+    // console.log(
+    //   `Привет! Меня зовут ${this.name}, мне ${this.age} лет, я из ${this.city}`,
+    // );
   },
 };
 
@@ -21,7 +21,7 @@ let skills = {
 };
 
 for (let key in skills) {
-  console.log(key + " : " + skills[key]);
+  // console.log(key + " : " + skills[key]);
   // или с шаблонными строками:
   // console.log(`${key} : ${obj[key]}`);
 }
@@ -55,7 +55,7 @@ for (let [key, val] of Object.entries(scores)) {
     maxKey = key;
   }
 }
-console.log(maxKey + ": " + maxVal);
+// console.log(maxKey + ": " + maxVal);
 
 // 📝 Задача 4: Студент
 let student = {
@@ -68,4 +68,4 @@ let student = {
 };
 
 const { name } = student; // извлекаем свойство name
-console.log(`${name}: средняя оценка ${student.average()}`);
+// console.log(`${name}: средняя оценка ${student.average()}`);
