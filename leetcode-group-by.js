@@ -19,3 +19,11 @@ Array.prototype.groupBy = function (fn) {
 
   return result;
 };
+
+// Входные данные
+const array = [{ id: "1" }, { id: "1" }, { id: "2" }];
+
+// Вызов метода
+const grouped = array.groupBy((item) => item.id);
+
+console.log(grouped);
