@@ -5,10 +5,10 @@ Array.prototype.groupBy = function (fn) {
   for (let i = 0; i < this.length; i++) {
     const item = this[i];
 
-    // Получаем ключ для текущего элемента
+    // Получаем ключ для текущего элемента. Возвращаем значение поля id
     const key = fn(item, i, this);
 
-    // Если группы с таким ключом еще нет, создаем ее
+    // Если свойство с таким ключом не существует, оно инициализируется пустым массивом
     if (!result[key]) {
       result[key] = [];
     }
@@ -17,6 +17,7 @@ Array.prototype.groupBy = function (fn) {
     result[key].push(item);
   }
 
+  // Возвращается готовый объект
   return result;
 };
 
