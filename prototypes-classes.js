@@ -6,9 +6,9 @@ class Person {
   }
 
   speak() {
-    return `Меня зовут ${this.name}, мне ${this.age}`;
+    return `Меня зовут ${this.name}, мне ${this.age} лет`;
   }
 }
 
-const girl = new Person("Аня", 20);
+const girl = new Person("Анна", 20);
 console.log(girl.speak());
