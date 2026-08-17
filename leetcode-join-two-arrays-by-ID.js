@@ -31,3 +31,4 @@ var join = function (arr1, arr2) {
 
 // const result = join(arr1, arr2);
 // console.log(result);
+
