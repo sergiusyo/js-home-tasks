@@ -87,13 +87,12 @@ console.log(bird.speak());
 // Транспорт
 class Vehicle {
   constructor(brand, speed) {
-    // super(brand, speed);
     this.brand = brand;
     this.speed = speed;
   }
 
   describe() {
-    return ``;
+    return `${this.brand}, макс. ${this.speed} км/ч`;
   }
 }
 
@@ -104,7 +103,6 @@ class Car extends Vehicle {
   }
 
   describe() {
-    const base = super.describe();
     return `"${this.brand}, макс. ${this.speed} км/ч, топливо: ${this.fuel}"`;
   }
 }
