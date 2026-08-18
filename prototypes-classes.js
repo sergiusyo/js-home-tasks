@@ -85,4 +85,29 @@ const bird = new Bird("Кеша");
 console.log(bird.speak());
 
 // Транспорт
-class Vehicle {}
+class Vehicle {
+  constructor(brand, speed) {
+    // super(brand, speed);
+    this.brand = brand;
+    this.speed = speed;
+  }
+
+  describe() {
+    return ``;
+  }
+}
+
+class Car extends Vehicle {
+  constructor(brand, speed, fuel) {
+    super(brand, speed);
+    this.fuel = fuel;
+  }
+
+  describe() {
+    const base = super.describe();
+    return `"${this.brand}, макс. ${this.speed} км/ч, топливо: ${this.fuel}"`;
+  }
+}
+
+const toyota = new Car("Toyota", 180, "бензин");
+console.log(toyota.describe());
