@@ -103,9 +103,23 @@ class Car extends Vehicle {
   }
 
   describe() {
-    return `"${this.brand}, макс. ${this.speed} км/ч, топливо: ${this.fuel}"`;
+    return `"${super.describe()} км/ч, топливо: ${this.fuel}"`;
   }
 }
 
-const toyota = new Car("Toyota", 180, "бензин");
-console.log(toyota.describe());
+const car = new Car("Toyota", 180, "бензин");
+console.log(car.describe());
+
+class Bicycle extends Vehicle {
+  constructor(brand, speed, gears) {
+    super(brand, speed);
+    this.gears = gears;
+  }
+
+  describe() {
+    return `"${super.describe()} км/ч, передачи: ${this.gears}"`;
+  }
+}
+
+const bicycle = new Bicycle("Trek", 30, 21);
+console.log(bicycle.describe());
