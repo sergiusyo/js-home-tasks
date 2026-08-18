@@ -33,3 +33,53 @@ class Student extends Person {
 // создание экземпляра класса Student
 const ivan = new Student("Иван", 18, "Математика");
 console.log(ivan.introduce()); // вызывает метод introduce() у созданного объекта
+
+// Зоопарк
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    return `${this.name} издает звук`;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name) {
+    super(name);
+    this.name = name;
+  }
+  speak() {
+    return `"${this.name}: Гав!"`;
+  }
+}
+
+const rex = new Dog("Рекс");
+console.log(rex.speak());
+
+class Cat extends Animal {
+  constructor(name) {
+    super(name);
+    this.name = name;
+  }
+  speak() {
+    return `"${this.name}: Мяу!"`;
+  }
+}
+
+const cat = new Cat("Мурка");
+console.log(cat.speak());
+
+class Bird extends Animal {
+  constructor(name) {
+    super(name);
+    this.name = name;
+  }
+  speak() {
+    return `"${this.name}: Чирик!"`;
+  }
+}
+
+const bird = new Bird("Кеша");
+console.log(bird.speak());
