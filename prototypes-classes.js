@@ -17,14 +17,16 @@ const girl = new Person("Анна", 20); // cсылка на этот готов
 console.log(girl.introduce()); // внутри метода introduce() this.name равен "Анна", а this.age равен 20
 
 // Класс Student
+// объявление дочернего класса
 class Student extends Person {
   constructor(name, age, faculty) {
+    // вызов super(name, age) передает первые два аргумента конструктору родительского класса (Person)
     super(name, age);
     this.faculty = faculty;
   }
   introduce() {
     const base = super.introduce();
-    return `${base}. Факультет: ${this.faculty}`;
+    return `${base}. Факультет: ${this.faculty}`; // берет результат от родителя и дополняет его информацией о факультете
   }
 }
 
