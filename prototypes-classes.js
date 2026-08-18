@@ -41,7 +41,7 @@ class Animal {
   }
 
   speak() {
-    return `${this.name} издает звук`;
+    return `${this.name}...`;
   }
 }
 
@@ -83,3 +83,6 @@ class Bird extends Animal {
 
 const bird = new Bird("Кеша");
 console.log(bird.speak());
+
+// Транспорт
+class Vehicle {}
