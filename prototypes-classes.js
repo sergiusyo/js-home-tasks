@@ -30,6 +30,6 @@ class Student extends Person {
   }
 }
 
+// создание экземпляра класса Student
 const ivan = new Student("Иван", 18, "Математика");
-console.log(ivan.introduce());
-// Меня зовут Иван, мне 18 лет. Факультет: Математика
+console.log(ivan.introduce()); // вызывает метод introduce() у созданного объекта
