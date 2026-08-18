@@ -13,8 +13,8 @@ class Person {
 }
 
 // создание экземпляра (новый объект на основе класса Person)
-const girl = new Person("Анна", 20);
-console.log(girl.introduce());
+const girl = new Person("Анна", 20); // cсылка на этот готовый объект сохраняется в константу girl
+console.log(girl.introduce()); // внутри метода introduce() this.name равен "Анна", а this.age равен 20
 
 // Класс Student
 class Student extends Person {
